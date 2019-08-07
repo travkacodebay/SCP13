@@ -3,19 +3,19 @@ pool:
 
 steps:
 
-- script: docker login docker.io -u looreydev -p $(dockerPassword)
+- script: docker login docker.io -u $(dockerId) -password-stdin $(dockerPassword)
   displayName: "login to docker.io"
 
 - task: Docker@2
-  displayName: "pushing and building"
+  displayName: "build container"
   inputs:
-    containerRegistry: 'Docker Hub - Looreydev'
-    repository: 'ss13-scp13'
-    command: 'buildAndPush'
+    containerRegistry: 'docker'
+    repository: '$(dockerRepo)'
+    command: 'build'
     Dockerfile: '**/Dockerfile'
 
-- task: Docker@2
-  displayName: "log out of docker.io"
-  inputs:
-    containerRegistry: 'Docker Hub - Looreydev'
-    command: 'logout'
+- script: docker push $(dockerId)/$(dockerRepo):$(dockerTag)
+  displayName: "push container"
+
+- script: docker logout
+  displayName: "log out of docker"
