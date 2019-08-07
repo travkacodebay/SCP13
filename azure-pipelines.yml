@@ -3,12 +3,11 @@ pool:
 
 steps:
 
-- task: Docker@2
-  inputs:
-    containerRegistry: 'Docker Hub - Looreydev'
-    command: 'login'
+- script: docker login docker.io -u looreydev -p $(dockerPassword)
+  displayName: "login to docker.io"
 
 - task: Docker@2
+  displayName: "pushing and building"
   inputs:
     containerRegistry: 'Docker Hub - Looreydev'
     repository: 'ss13-scp13'
@@ -16,6 +15,7 @@ steps:
     Dockerfile: '**/Dockerfile'
 
 - task: Docker@2
+  displayName: "log out of docker.io"
   inputs:
     containerRegistry: 'Docker Hub - Looreydev'
     command: 'logout'
