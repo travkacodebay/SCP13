@@ -12,14 +12,8 @@ steps:
   inputs:
     containerRegistry: 'Docker Hub - Looreydev'
     repository: 'ss13-scp13'
-    command: 'build'
+    command: 'buildAndPush'
     Dockerfile: '**/Dockerfile'
-
-- task: Docker@2
-  inputs:
-    containerRegistry: 'Docker Hub - Looreydev'
-    repository: 'ss13-scp13'
-    command: 'push'
 
 - task: Docker@2
   inputs:
