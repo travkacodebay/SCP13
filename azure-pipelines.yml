@@ -2,20 +2,17 @@ pool:
   vmImage: "ubuntu-16.04"
 
 steps:
+- script: docker login -u ss13scp13 -p $(dockerPassword)
+  displayName: "login to docker"
 
-- script: docker login docker.io -u looreydev -p $(dockerPassword)
-  displayName: "login to docker.io"
+- script: |
+    apt-get update
+    apt-get upgrade
+    docker build -f Dockerfile -t ss13scp13/ss13-scp13 .
+  displayName: "build docker image"
 
-- task: Docker@2
-  displayName: "build container"
-  inputs:
-    containerRegistry: 'docker'
-    repository: '$(dockerRepo)'
-    command: 'build'
-    Dockerfile: '**/Dockerfile'
-
-- script: docker push looreydev/$(dockerRepo):$(dockerTag)
-  displayName: "push container"
+- script: docker push ss13scp13/ss13-scp13
+  displayName: "push to docker"
 
 - script: docker logout
-  displayName: "log out of docker"
+  displayName: "logout"
