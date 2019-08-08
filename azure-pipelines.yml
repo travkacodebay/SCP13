@@ -16,12 +16,3 @@ steps:
 
 - script: docker logout
   displayName: "logout"
-
-- task: ado-discord-webhook@1
-  displayName: "report status to discord"
-  inputs:
-    channelId: '$(discordChanId)'
-    webhookKey: '$(discordWebhookUri)'
-    name: 'Azure'
-    avatar: 'https://avatars.slack-edge.com/2019-01-17/528389819366_e7a0672f0480b3e98d21_512.png'
-    messageType: 'embeds'
