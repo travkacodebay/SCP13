@@ -3,7 +3,7 @@ pool:
 
 steps:
 
-- script: docker login docker.io -u looreydev -p $(dockerPassword)
+- script: docker login docker.io -u ss13scp13 -p $(dockerPassword)
   displayName: "login to docker.io"
 
 - task: Docker@2
@@ -14,7 +14,7 @@ steps:
     command: 'build'
     Dockerfile: '**/Dockerfile'
 
-- script: docker push looreydev/ss13-scp13:latest
+- script: docker push ss13scp13/ss13-scp13:latest
   displayName: "push container"
 
 - script: docker logout
