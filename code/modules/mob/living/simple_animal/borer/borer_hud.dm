@@ -96,17 +96,17 @@
 	if(!worm.can_use_borer_ability())
 		return
 
-	if(worm.chemicals < 50)
+	if(worm.chemicals < 5)
 		to_chat(worm, SPAN_WARNING("You don't have enough chemicals!"))
 		return
 
 	var/chem = input("Select a chemical to secrete.", "Chemicals") as null|anything in worm.chemical_types
-	if(!chem || !worm.chemical_types[chem] || !worm || QDELETED(worm) || worm.chemicals < 50 || !worm.can_use_borer_ability())
+	if(!chem || !worm.chemical_types[chem] || !worm || QDELETED(worm) || worm.chemicals < 5 || !worm.can_use_borer_ability())
 		return
 
 	to_chat(worm, SPAN_NOTICE("You squirt a measure of [chem] from your reservoirs into \the [worm.host]'s bloodstream."))
-	worm.host.reagents.add_reagent(worm.chemical_types[chem], 10)
-	worm.chemicals -= 50
+	worm.host.reagents.add_reagent(worm.chemical_types[chem], 5)
+	worm.chemicals -= 5
 	return TRUE
 
 /obj/screen/borer/leave_host

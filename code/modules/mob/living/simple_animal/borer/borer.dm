@@ -29,7 +29,18 @@
 	var/static/list/chemical_types = list(
 		"bicaridine" = /datum/reagent/bicaridine,
 		"hyperzine" =  /datum/reagent/hyperzine,
-		"tramadol" =   /datum/reagent/tramadol
+		"tramadol" =   /datum/reagent/tramadol,
+		"oxycodone" = /datum/reagent/tramadol/oxycodone,
+		"inaprovaline" = /datum/reagent/inaprovaline,
+		"kelotane" = /datum/reagent/kelotane,
+		"dylovene" = /datum/reagent/dylovene,
+		"dexalin" = /datum/reagent/dexalin,
+		"tricordrazine" = /datum/reagent/tricordrazine,
+		"alkysine" = /datum/reagent/alkysine,
+		"peridaxon" = /datum/reagent/peridaxon,
+		"Synthetic Blood" = /datum/reagent/nanoblood,
+		"adrenaline" = /datum/reagent/adrenaline
+		
 	)
 
 	var/generation = 1

@@ -32,7 +32,7 @@
 		icon_state = "prototype-empty"
 
 /obj/item/weapon/gun/projectile/automatic/machine_pistol
-	name = "machine pistol"
+	name = "MP6 Vesper"
 	desc = "The Hephaestus Industries MP6 Vesper, A fairly common machine pistol. Sometimes refered to as an 'uzi' by the backwater spacers it is often associated with."
 	icon = 'icons/obj/guns/machine_pistol.dmi'
 	icon_state = "mpistolen"
@@ -67,8 +67,8 @@
 		overlays += image(icon, "ammo_ok")
 
 /obj/item/weapon/gun/projectile/automatic/merc_smg
-	name = "submachine gun"
-	desc = "The NanoTrasen C-20r is a lightweight and rapid firing SMG, for when you REALLY need someone dead. Has a 'Per falcis, per pravitas' buttstamp."
+	name = "C-20r SMG"
+	desc = "The Foundation C-20r is a lightweight and rapid firing SMG, for when you REALLY need someone dead. Has a 'Per falcis, per pravitas' buttstamp."
 	icon = 'icons/obj/guns/merc_smg.dmi'
 	icon_state = "c20r"
 	item_state = "c20r"
@@ -102,7 +102,7 @@
 		icon_state = "c20r"
 
 /obj/item/weapon/gun/projectile/automatic/assault_rifle
-	name = "assault rifle"
+	name = "STS-35 Assault Rifle"
 	desc = "The rugged STS-35 is a durable automatic weapon of a make popular on the frontier worlds. Originally produced by Hephaestus. The serial number has been scratched off."
 	icon = 'icons/obj/guns/assault_rifle.dmi'
 	icon_state = "arifle"
@@ -140,7 +140,7 @@
 		wielded_item_state = "arifle-wielded-empty"
 
 /obj/item/weapon/gun/projectile/automatic/sec_smg
-	name = "submachine gun"
+	name = "WT-550 Saber"
 	desc = "The WT-550 Saber is a cheap self-defense weapon, mass-produced by Ward-Takahashi for paramilitary and private use."
 	icon = 'icons/obj/guns/sec_smg.dmi'
 	icon_state = "wt550"
@@ -172,7 +172,7 @@
 		icon_state = "wt550"
 
 /obj/item/weapon/gun/projectile/automatic/bullpup_rifle
-	name = "bullpup assault rifle"
+	name = "Z8 Bulldog"
 	desc = "The Hephaestus Industries Z8 Bulldog is an older model bullpup carbine. Makes you feel like a space marine when you hold it."
 	icon = 'icons/obj/guns/bullpup_rifle.dmi'
 	icon_state = "carbine"
@@ -247,7 +247,7 @@
 		to_chat(user, "\The [launcher] is empty.")
 
 /obj/item/weapon/gun/projectile/automatic/l6_saw
-	name = "light machine gun"
+	name = "L6 Saw LMG"
 	desc = "A rather traditionally made L6 SAW with a pleasantly lacquered wooden pistol grip. Has 'Aussec Armoury- 2281' engraved on the reciever." //probably should refluff this
 	icon = 'icons/obj/guns/saw.dmi'
 	icon_state = "l6closed100"

@@ -1,6 +1,6 @@
 
 /obj/item/weapon/gun/projectile/pirate
-	name = "zip gun"
+	name = "Makeshift Pistol"
 	desc = "Little more than a barrel, handle, and firing mechanism, cheap makeshift firearms like this one are not uncommon in frontier systems."
 	icon = 'icons/obj/guns/zipgun.dmi'
 	icon_state = "zipgun"

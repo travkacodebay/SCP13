@@ -1,6 +1,6 @@
 /obj/item/weapon/gun/energy/taser
-	name = "electrolaser"
-	desc = "The NT Mk30 NL is a small, low capacity gun used for non-lethal takedowns. Produced by NT, it's actually a licensed version of a W-T design. It can switch between high and low intensity stun shots."
+	name = "Tazer"
+	desc = "Standard Issue Foundation Tazer"
 	icon = 'icons/obj/guns/taser.dmi'
 	icon_state = "taser"
 	item_state = null	//so the human update icon uses the icon_state instead.

@@ -1,5 +1,5 @@
 /obj/item/weapon/gun/projectile/revolver
-	name = "revolver"
+	name = "A+M Double Action"
 	desc = "The al-Maliki & Mosley Magnum Double Action is a choice revolver for when you absolutely, positively need to put a hole in the other guy."
 	icon = 'icons/obj/guns/revolvers.dmi'
 	icon_state = "revolver"
@@ -46,7 +46,7 @@
 	return ..()
 
 /obj/item/weapon/gun/projectile/revolver/medium
-	name = "revolver"
+	name = "Foundation 'Solid'"
 	icon_state = "medium"
 	safety_icon = "medium_safety"
 	caliber = CALIBER_PISTOL
@@ -70,7 +70,7 @@
 	fire_delay = 7
 
 /obj/item/weapon/gun/projectile/revolver/capgun
-	name = "cap gun"
+	name = "Foundation Revolver"
 	desc = "Looks almost like the real thing! Ages 8 and up."
 	icon_state = "revolver-toy"
 	caliber = CALIBER_CAPS
